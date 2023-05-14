@@ -66,40 +66,16 @@ func main() {
 	defer conn.Close()
 
 	client := pb.NewStreamServiceClient(conn)
-	/*
-		err = printLists(client, &pb.StreamRequest{Pt: &pb.StreamPoint{Name: "gRPC Stream Client: List", Value: 2018}})
-		if err != nil {
-			log.Fatalf("printLists.err: %v", err)
-		}
-	*/
-	file, _ := os.Open("E:\\VirtualMachine\\ubuntu-22.10-live-server-amd64.iso")
 
-	var readClosers []io.ReadCloser
-	readClosers = append(readClosers, file)
-	rc := MultiReadCloser(readClosers...)
-	buffer := make([]byte, 4096)
-
-	println(time.Now().Format("2006-01-02 15:04:05"))
-	for {
-		n, err := rc.Read(buffer)
-
-		// s := string(buffer)
-		// println(buffer)
-		// println(s)
-		if err != nil && err != io.EOF {
-			log.Fatalf("printRecord.err: %v", err)
-			return
-		}
-		if err == io.EOF || n == 0 {
-			break
-		}
-		err = printRecord(client, &pb.StreamRequest{Pt: &pb.StreamPoint{Name: "n", Value: 2018, Buffer: buffer}})
-		if err != nil {
-			log.Fatalf("printRecord.err: %v", err)
-		}
+	err = printLists(client, &pb.StreamRequest{Pt: &pb.StreamPoint{Name: "gRPC Stream Client: List", Value: 2018}})
+	if err != nil {
+		log.Fatalf("printLists.err: %v", err)
 	}
 
-	println(time.Now().Format("2006-01-02 15:04:05"))
+	err = printRecord(client, &pb.StreamRequest{Pt: &pb.StreamPoint{}})
+	if err != nil {
+		log.Fatalf("printRecord.err: %v", err)
+	}
 
 	err = printRoute(client, &pb.StreamRequest{Pt: &pb.StreamPoint{Name: "gRPC Stream Client: Route", Value: 2018}})
 	if err != nil {
@@ -134,20 +110,40 @@ func printRecord(client pb.StreamServiceClient, r *pb.StreamRequest) error {
 		return err
 	}
 
-	/*
-		for n := 0; n < 6; n++ {
-			err := stream.Send(r)
-			if err != nil {
-				return err
-			}
+	file, _ := os.Open("E:\\VirtualMachine\\ubuntu-22.10-live-server-amd64.iso")
+
+	var readClosers []io.ReadCloser
+	readClosers = append(readClosers, file)
+	rc := MultiReadCloser(readClosers...)
+	buffer := make([]byte, 2048)
+
+	println(time.Now().Format("2006-01-02 15:04:05"))
+	for {
+		n, err := rc.Read(buffer)
+
+		// s := string(buffer)
+		// println(buffer)
+		// println(s)
+		if err != nil && err != io.EOF {
+			log.Fatalf("printRecord.err: %v", err)
+			return err
 		}
-	*/
+		if err == io.EOF || n == 0 {
+			break
+		}
+		err = stream.Send(&pb.StreamRequest{Pt: &pb.StreamPoint{Name: "n", Value: 2018, Buffer: buffer}})
+		if err != nil {
+			println(1)
+			log.Fatalf("printRecord.err: %v", err)
+		}
+	}
+
+	println(time.Now().Format("2006-01-02 15:04:05"))
+
 	_, err = stream.CloseAndRecv()
 	if err != nil {
 		return err
 	}
-
-	// log.Printf("resp: pj.name: %s, pt.value: %d", resp.Pt.Name, resp.Pt.Value)
 
 	return nil
 }
