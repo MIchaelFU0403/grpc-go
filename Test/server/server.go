@@ -8,10 +8,12 @@ import (
 	"google.golang.org/grpc"
 
 	// pb "github.com/EDDYCJY/go-grpc-example/proto"
-	pb "github.com/MinH-09/grpc-go/proto/proto"
+	pb "github.com/MinH-09/grpc-go/proto"
 )
 
-type StreamService struct{}
+type StreamService struct {
+	pb.UnimplementedStreamServiceServer
+}
 
 const (
 	PORT = "9002"
@@ -49,4 +51,8 @@ func (s *StreamService) Record(stream pb.StreamService_RecordServer) error {
 
 func (s *StreamService) Route(stream pb.StreamService_RouteServer) error {
 	return nil
+}
+
+func (s *StreamService) mustEmbedUnimplementedStreamServiceServer() {
+	print()
 }

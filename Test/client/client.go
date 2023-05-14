@@ -5,12 +5,13 @@ import (
 	"io"
 	"log"
 	"os"
+	"time"
 
 	multierror "github.com/hashicorp/go-multierror"
 	"google.golang.org/grpc"
 
 	// pb "github.com/EDDYCJY/go-grpc-example/proto"
-	pb "github.com/MinH-09/grpc-go/proto/proto"
+	pb "github.com/MinH-09/grpc-go/proto"
 )
 
 const (
@@ -78,10 +79,12 @@ func main() {
 	rc := MultiReadCloser(readClosers...)
 	buffer := make([]byte, 4096)
 
+	println(time.Now().Format("2006-01-02 15:04:05"))
 	for {
 		n, err := rc.Read(buffer)
 
-		s := string(buffer)
+		// s := string(buffer)
+		// println(buffer)
 		// println(s)
 		if err != nil && err != io.EOF {
 			log.Fatalf("printRecord.err: %v", err)
@@ -90,11 +93,13 @@ func main() {
 		if err == io.EOF || n == 0 {
 			break
 		}
-		err = printRecord(client, &pb.StreamRequest{Pt: &pb.StreamPoint{Name: s, Value: 2018}})
+		err = printRecord(client, &pb.StreamRequest{Pt: &pb.StreamPoint{Name: "n", Value: 2018, Buffer: buffer}})
 		if err != nil {
 			log.Fatalf("printRecord.err: %v", err)
 		}
 	}
+
+	println(time.Now().Format("2006-01-02 15:04:05"))
 
 	err = printRoute(client, &pb.StreamRequest{Pt: &pb.StreamPoint{Name: "gRPC Stream Client: Route", Value: 2018}})
 	if err != nil {
