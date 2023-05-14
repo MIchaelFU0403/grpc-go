@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc"
 
 	// pb "github.com/EDDYCJY/go-grpc-example/proto"
-	pb "github.com/MinH-09/grpc-go/proto"
+	pb "github.com/MinH-09/grpc-go/proto/proto"
 )
 
 type StreamService struct{}
