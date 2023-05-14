@@ -5,6 +5,8 @@ Normal
 
 1G：  
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/4d647027-f1cc-4960-8be6-fe246988ae39)
+Time:   
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/1a81e4b2-11e2-49fd-bbb0-0d3fa1d5b95a)
 
 3G：  
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/059bb041-aa91-4c46-9b80-cc17b6a50a3c)
