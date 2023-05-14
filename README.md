@@ -4,7 +4,9 @@ Normal
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/e0a52cba-aa7c-4b66-ac1a-0053260be533)
 
 1G：  
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/4d647027-f1cc-4960-8be6-fe246988ae39)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/cdee5d76-a023-4e9b-8e3d-47ce97a90310)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/58346f3f-7ea5-485c-8fcc-325ebd6f8993)
+
 Time:   
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/1a81e4b2-11e2-49fd-bbb0-0d3fa1d5b95a)
 
