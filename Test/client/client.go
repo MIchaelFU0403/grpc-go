@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc"
 
 	// pb "github.com/EDDYCJY/go-grpc-example/proto"
-	pb "github.com/MinH-09/grpc-go/Test/service/proto"
+	pb "github.com/MinH-09/grpc-go/proto"
 )
 
 const (

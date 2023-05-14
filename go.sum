@@ -1,7 +1,5 @@
 github.com/EDDYCJY/go-grpc-example v0.0.0-20181014074047-0f68708edbcb h1:0yN9vJxaBr7OfXlMA50+TriAaiGC6EBKEcr4/UttfFY=
 github.com/EDDYCJY/go-grpc-example v0.0.0-20181014074047-0f68708edbcb/go.mod h1:fDCw1s1ryJOjsZb8+eAaMfFio1y9G9Hi+rgYVIVUXsw=
-github.com/MinH-09/grpc-go v0.0.0-20230512081628-90a77a65e0f7 h1:AJCZmXt+pL9iT4N0xv2H68gTo0fqUkMXVbVzKMKbawU=
-github.com/MinH-09/grpc-go v0.0.0-20230512081628-90a77a65e0f7/go.mod h1:PQdL6U06K706JoA6N47eK2khCtQxZ+MyvJ55X8dvBj0=
 github.com/golang/protobuf v1.5.0/go.mod h1:FsONVRAS9T7sI+LIUmWTfcYkHO4aIWwzhcaSAoJOfIk=
 github.com/golang/protobuf v1.5.3 h1:KhyjKVUg7Usr/dYsdSqoFveMYd5ko72D+zANwlG1mmg=
 github.com/golang/protobuf v1.5.3/go.mod h1:XVQd3VNwM+JqD3oG2Ue2ip4fOMUkwXdXDdiuN0vRsmY=
