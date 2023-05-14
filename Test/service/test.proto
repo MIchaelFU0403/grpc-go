@@ -1,25 +1,28 @@
 syntax = "proto3";
 
-package Echo;      // 包名
-import "google/protobuf/empty.proto";
-option go_package = '/service';    // 指定生成的go代码所存放的路径，不用提前创建
+package proto;
+option go_package = '/proto';    // 指定生成的go代码所存放的路径，不用提前创建
 
-// Echo 服务，包含了4种类型API
-service Echo {
-  // UnaryAPI
-  rpc UnaryEcho(EchoRequest) returns (EchoResponse) {}
-  // SServerStreaming
-  rpc ServerStreamingEcho(EchoRequest) returns (stream EchoResponse) {}
-  // ClientStreamingE
-  rpc ClientStreamingEcho(stream EchoRequest) returns(google.protobuf.Empty) {}
-  // BidirectionalStreaming
-  rpc BidirectionalStreamingEcho(stream EchoRequest) returns (stream EchoResponse) {}
+service StreamService {
+    rpc List(StreamRequest) returns (stream StreamResponse) {};
+
+    rpc Record(stream StreamRequest) returns (StreamResponse) {};
+
+    rpc Route(stream StreamRequest) returns (stream StreamResponse) {};
 }
 
-message EchoRequest {
-  string message = 1;
+
+message StreamPoint {
+  string name = 1;
+  int32 value = 2;
+  bytes buffer = 3;
 }
 
-message EchoResponse {
-  string message = 1;
+message StreamRequest {
+  StreamPoint pt = 1;
+  
+}
+
+message StreamResponse {
+  StreamPoint pt = 1;
 }
