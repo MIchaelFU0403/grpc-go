@@ -4,11 +4,12 @@ Normal
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/e0a52cba-aa7c-4b66-ac1a-0053260be533)
 
 1G：  
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/cdee5d76-a023-4e9b-8e3d-47ce97a90310)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/3b9a748c-47d8-422a-9ddc-c835f81f80f3)
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/58346f3f-7ea5-485c-8fcc-325ebd6f8993)
 
 Time:   
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/1a81e4b2-11e2-49fd-bbb0-0d3fa1d5b95a)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/cea7a825-9d06-4d50-b6c4-8dc11bc1ab4d)
+
 
 3G：  
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/059bb041-aa91-4c46-9b80-cc17b6a50a3c)
@@ -17,10 +18,10 @@ Time:
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/d915983d-2c53-40e2-9a70-881ae8ad6357)
 
 1024：  
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/d04fd296-9c9a-445d-8c98-5fab373fac18)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/01f864a1-d19f-4ce4-9210-6e4e41446655)
 
 2048：   
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/7dccdddb-c84b-4fd7-b836-100c1fb80bc2)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/a3b0100d-ee05-4747-a356-48c62b0578f6)
 
 4096：   
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/b62202e3-1636-4297-8ce5-58e82683c29d)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/b2ba1bd3-eed6-4f48-a037-8e0ecd189207)
