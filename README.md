@@ -4,7 +4,7 @@ Normal
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/a1a78564-ca40-431a-8d79-e93a821f38c1)
 
 1G：  
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/3b9a748c-47d8-422a-9ddc-c835f81f80f3)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/5b76922a-f23e-4043-96de-e8529aab3bab)
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/58346f3f-7ea5-485c-8fcc-325ebd6f8993)
 
 Time:   
@@ -12,7 +12,7 @@ Time:
 
 
 3G：  
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/059bb041-aa91-4c46-9b80-cc17b6a50a3c)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/10c6a48c-219b-4507-b431-9fc5f342ba4a)
 
 5G：  
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/d915983d-2c53-40e2-9a70-881ae8ad6357)
