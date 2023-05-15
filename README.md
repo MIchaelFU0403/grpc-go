@@ -1,7 +1,7 @@
 # grpc-go
 
 Normal  
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/e0a52cba-aa7c-4b66-ac1a-0053260be533)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/a1a78564-ca40-431a-8d79-e93a821f38c1)
 
 1G：  
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/3b9a748c-47d8-422a-9ddc-c835f81f80f3)
