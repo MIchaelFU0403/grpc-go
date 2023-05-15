@@ -14,7 +14,7 @@ Time:
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/059bb041-aa91-4c46-9b80-cc17b6a50a3c)
 
 5G：  
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/95358f07-4ddf-4568-8420-c53d296fdee3)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/d915983d-2c53-40e2-9a70-881ae8ad6357)
 
 1024：  
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/d04fd296-9c9a-445d-8c98-5fab373fac18)
