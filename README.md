@@ -21,7 +21,7 @@ Time:
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/01f864a1-d19f-4ce4-9210-6e4e41446655)
 
 2048：   
-![image](https://github.com/MinH-09/grpc-go/assets/76146890/a3b0100d-ee05-4747-a356-48c62b0578f6)
+![image](https://github.com/MinH-09/grpc-go/assets/76146890/fdd10e6f-ddb7-4e33-b413-9e251597ed31)
 
 4096：   
 ![image](https://github.com/MinH-09/grpc-go/assets/76146890/b2ba1bd3-eed6-4f48-a037-8e0ecd189207)
